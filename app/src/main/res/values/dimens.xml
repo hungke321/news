@@ -1,0 +1,22 @@
+<resources>
+
+
+    <dimen name="main_activity_elevation">5dp</dimen>
+
+    <!--Confrim Dialog -->
+    <dimen name="textSize_confirm_dialog">18dp</dimen>
+    <dimen name="width_confirm_dialog">80dp</dimen>
+    <dimen name="height_confirm_dialog">30dp</dimen>
+    <dimen name="margin_left_confirm_dialog">20dp</dimen>
+    <dimen name="margin_right_confirm_dialog">20dp</dimen>
+    <dimen name="margin_top_confirm_dialog">10dp</dimen>
+
+    <!--Layout_Navigation_Left-->
+    <dimen name="width_imageview_back_navigation_left">48dp</dimen>
+    <dimen name="height_imageview_back_navigation_left">48dp</dimen>
+    <dimen name="margin_imageview_back_navigation_left">5dp</dimen>
+    <dimen name="elevation_card_view_navigation_left">5dp</dimen>
+    <dimen name="margin_navigation_left">10dp</dimen>
+    <dimen name="margin_5dp_navigation_left">5dp</dimen>
+
+</resources>

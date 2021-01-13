@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:id="@+id/img_back_right"
+            android:layout_width="@dimen/width_imageview_back_navigation_left"
+            android:layout_height="@dimen/height_imageview_back_navigation_left"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:scaleType="center"
+            android:src="@drawable/ic_keyboard_backspace_black_24dp"
+            android:stateListAnimator="@xml/animate_scale"
+            android:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_content_news_small"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="left"
+            android:layout_toLeftOf="@id/img_share_right"
+            android:layout_toRightOf="@+id/img_back_right"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Chuyên mục"
+            android:fontFamily="@font/sf_ui_display_regular"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/img_share_right"
+            android:layout_width="@dimen/width_imageview_back_navigation_left"
+            android:layout_height="@dimen/height_imageview_back_navigation_left"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/margin_imageview_back_navigation_left"
+            android:layout_toLeftOf="@+id/img_expand_right"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:scaleType="center"
+            android:src="@drawable/ic_share_black_24dp"
+            android:stateListAnimator="@xml/animate_scale"
+            android:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/img_expand_right"
+            android:layout_width="@dimen/width_imageview_back_navigation_left"
+            android:layout_height="@dimen/height_imageview_back_navigation_left"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/margin_imageview_back_navigation_left"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:scaleType="center"
+            android:src="@drawable/ic_more_horiz_black_24dp"
+            android:stateListAnimator="@xml/animate_scale"
+            android:tint="@color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/wv_news"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></WebView>
+
+        <android.support.v4.widget.ContentLoadingProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</LinearLayout>

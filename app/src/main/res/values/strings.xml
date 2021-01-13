@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">News</string>
+
+    <string name="hello">123</string>
+
+    <string name="news">Tin Tức</string>
+    <string name="video">Video</string>
+    <string name="personal">Cá nhân</string>
+    <string name="yes">Có</string>
+    <string name="no">Không</string>
+
+    <string name="show_grid">Hiển thị dạng lưới</string>
+    <string name="show_list">Hiển thị dạng danh sách</string>
+
+    <string name="not_care">Không quan tâm</string>
+    <string name="change">Thay đổi</string>
+    <string name="favorite">Thêm vào yêu thích</string>
+    <string name="share">Chia sẻ</string>
+    <!--list categories-->
+    <string-array name="categories">
+        <item>Trang chủ</item>
+        <item>Thời sự</item>
+        <item>Thế giới</item>
+        <item>Kinh doanh</item>
+        <item>Start Up</item>
+        <item>Giải trí</item>
+        <item>Thể thao</item>
+        <item>Pháp luật</item>
+        <item>Giáo dục</item>
+        <item>Sức khỏe</item>
+        <item>Đời sống</item>
+        <item>Du lịch</item>
+        <item>Khoa học</item>
+        <item>Số hóa</item>
+        <item>Xe</item>
+        <item>Ý kiến</item>
+        <item>Tâm sự</item>
+        <item>Cười</item>
+    </string-array>
+    <!--List Link-->
+    <string-array name="rss">
+        <item>https://vnexpress.net/rss/tin-moi-nhat.rss</item>
+        <item>https://vnexpress.net/rss/thoi-su.rss</item>
+        <item>https://vnexpress.net/rss/the-gioi.rss</item>
+        <item>https://vnexpress.net/rss/kinh-doanh.rss</item>
+        <item>https://vnexpress.net/rss/startup.rss</item>
+        <item>https://vnexpress.net/rss/giai-tri.rss</item>
+        <item>https://vnexpress.net/rss/the-thao.rss</item>
+        <item>https://vnexpress.net/rss/phap-luat.rss</item>
+        <item>https://vnexpress.net/rss/giao-duc.rss</item>
+        <item>https://vnexpress.net/rss/suc-khoe.rss</item>
+        <item>https://vnexpress.net/rss/gia-dinh.rss</item>
+        <item>https://vnexpress.net/rss/du-lich.rss</item>
+        <item>https://vnexpress.net/rss/khoa-hoc.rss</item>
+        <item>https://vnexpress.net/rss/so-hoa.rss</item>
+        <item>https://vnexpress.net/rss/oto-xe-may.rss</item>
+        <item>https://vnexpress.net/rss/y-kien.rss</item>
+        <item>https://vnexpress.net/rss/tam-su.rss</item>
+        <item>https://vnexpress.net/rss/cuoi.rss</item>
+    </string-array>
+</resources>

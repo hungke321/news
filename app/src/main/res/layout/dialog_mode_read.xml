@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:fontFamily="@font/sf_ui_display_regular"
+        android:gravity="center"
+        android:text="Chế độ đọc"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/check_list_large"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:fontFamily="@font/sf_ui_display_regular"
+            android:paddingLeft="20dp"
+            android:text="Danh sách lớn"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/colorAccent"></View>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/check_list_small"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:fontFamily="@font/sf_ui_display_regular"
+            android:paddingLeft="20dp"
+            android:text="Danh sách nhỏ"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/colorAccent"></View>
+    </RadioGroup>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_cancel_dialog_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorAccent"
+            android:fontFamily="@font/sf_ui_display_regular"
+            android:stateListAnimator="@xml/animate_scale_small"
+            android:text="Hủy bỏ"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_confirm_dialog_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/red"
+            android:fontFamily="@font/sf_ui_display_regular"
+            android:stateListAnimator="@xml/animate_scale_small"
+            android:text="Xác nhận"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </TableRow>
+</LinearLayout>

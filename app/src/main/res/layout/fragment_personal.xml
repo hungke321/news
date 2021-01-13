@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_title_news"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_toLeftOf="@+id/img_title_news"
+                android:fontFamily="@font/sf_ui_display_regular"
+                android:gravity="center_vertical"
+                android:text="Tin tức "
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/img_title_news"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_arrow_drop_up_black_24dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/light_grey" />
+
+        <LinearLayout
+            android:id="@+id/layout_contain_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_mark_news"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/ic_turned_in_unselect_24dp"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_turned_in_unselect_24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/ic_more_vert_black_24dp_mark"
+                    android:layout_toRightOf="@+id/ic_turned_in_unselect_24dp"
+                    android:fontFamily="@font/sf_ui_display_regular"
+                    android:gravity="center_vertical"
+                    android:text="Đã đánh dấu"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/ic_more_vert_black_24dp_mark"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_more_vert_black_24dp"
+                    android:tint="@color/black" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/light_grey" />
+
+            <RelativeLayout
+                android:id="@+id/layout_history_news"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/ic_history_black_24dp_history_news"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_history_black_24dp"
+                    android:tint="@color/colorAccent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/ic_more_vert_black_24dp_history_news"
+                    android:layout_toRightOf="@+id/ic_history_black_24dp_history_news"
+                    android:fontFamily="@font/sf_ui_display_regular"
+                    android:gravity="center_vertical"
+                    android:text="Đọc gần đây"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/ic_more_vert_black_24dp_history_news"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_more_vert_black_24dp"
+                    android:tint="@color/black" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/light_grey" />
+
+            <RelativeLayout
+                android:id="@+id/layout_offline_news"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/ic_cloud_off_black_24dp"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_cloud_off_black_24dp"
+                    android:tint="@color/colorAccent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/ic_more_vert_black_24dp_read_off"
+                    android:layout_toRightOf="@+id/ic_cloud_off_black_24dp"
+                    android:fontFamily="@font/sf_ui_display_regular"
+                    android:gravity="center_vertical"
+                    android:text="Đọc offline"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/ic_more_vert_black_24dp_read_off"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_more_vert_black_24dp"
+                    android:tint="@color/black" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/light_grey" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_title_video"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_toLeftOf="@+id/img_title_video"
+                android:fontFamily="@font/sf_ui_display_regular"
+                android:gravity="center_vertical"
+                android:text="Video"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/img_title_video"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_arrow_drop_up_black_24dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/light_grey" />
+
+        <LinearLayout
+            android:id="@+id/layout_contain_videos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_video_love"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/ic_favorite_black_24dp"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_favorite_black_24dp"
+                    android:tint="@color/colorAccent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/ic_more_vert_black_24dp_video_love"
+                    android:layout_toRightOf="@+id/ic_favorite_black_24dp"
+                    android:fontFamily="@font/sf_ui_display_regular"
+                    android:gravity="center_vertical"
+                    android:text="Video yêu thích"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/ic_more_vert_black_24dp_video_love"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_more_vert_black_24dp"
+                    android:tint="@color/black" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/light_grey" />
+
+            <RelativeLayout
+                android:id="@+id/layout_history_video"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/ic_history_black_24dp_video"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_history_black_24dp"
+                    android:tint="@color/colorAccent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/ic_more_vert_black_24dp_video_history"
+                    android:layout_toRightOf="@+id/ic_history_black_24dp_video"
+                    android:fontFamily="@font/sf_ui_display_regular"
+                    android:gravity="center_vertical"
+                    android:text="Xem gần đây"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/ic_more_vert_black_24dp_video_history"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_more_vert_black_24dp"
+                    android:tint="@color/black" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/light_grey" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_title_systems"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_toLeftOf="@+id/img_title_systems"
+                android:fontFamily="@font/sf_ui_display_regular"
+                android:gravity="center_vertical"
+                android:text="Hệ thống"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/img_title_systems"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_arrow_drop_up_black_24dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/light_grey" />
+
+        <LinearLayout
+            android:id="@+id/layout_contain_systems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/sw_load_auto_image"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/sf_ui_display_regular"
+                android:text="Tải ảnh tự động"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/light_grey" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/sw_setting_not_image"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/sf_ui_display_regular"
+                android:text="Không hiển thị ảnh"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/light_grey" />
+
+            <LinearLayout
+                android:id="@+id/layout_history_app"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_text_size"
+                    android:tint="@color/colorAccent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/sf_ui_display_regular"
+                    android:gravity="center_vertical"
+                    android:text="Thay đổi cỡ chữ"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/seekBar_setting_text_size"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:max="4" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/light_grey" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_title_app"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_toLeftOf="@+id/img_title_app"
+                android:fontFamily="@font/sf_ui_display_regular"
+                android:gravity="center_vertical"
+                android:text="Ứng dụng"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/img_title_app"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_arrow_drop_up_black_24dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/light_grey" />
+
+        <LinearLayout
+            android:id="@+id/layout_contain_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_report"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_mail_black_24dp"
+                    android:tint="@color/colorAccent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/sf_ui_display_regular"
+                    android:gravity="center_vertical"
+                    android:text="Gửi mail góp ý"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/light_grey" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/sf_ui_display_regular"
+                    android:gravity="center_vertical"
+                    android:text="Phiên bản ứng dụng"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/sf_ui_display_regular"
+                    android:gravity="center_vertical"
+                    android:text="V_1.0.0"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/light_grey" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/sf_ui_display_regular"
+                    android:gravity="center_vertical"
+                    android:text="Nhà phát triển"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/sf_ui_display_regular"
+                    android:gravity="center_vertical"
+                    android:text="Khải Phan"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/light_grey" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

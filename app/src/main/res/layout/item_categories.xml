@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn_item_categories"
+    android:layout_width="100dp"
+    android:layout_height="38dp"
+    android:layout_marginRight="@dimen/margin_imageview_back_navigation_left"
+    android:background="@drawable/shape_button_categories"
+    android:fontFamily="@font/sf_ui_display_regular"
+    android:stateListAnimator="@xml/animate_scale_small"
+    android:text="Trang chủ"
+    android:textAllCaps="false"
+    android:textColor="@color/white"
+    android:textSize="13dp" />

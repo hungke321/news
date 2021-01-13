@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/CoordinatorLayout_navigation_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".view.activity.MainActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_navigation_left"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+                <ImageView
+                    android:id="@+id/img_Home_left"
+                    android:layout_width="@dimen/width_imageview_back_navigation_left"
+                    android:layout_height="@dimen/height_imageview_back_navigation_left"
+                    android:layout_gravity="left"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_home_black_24dp"
+                    android:stateListAnimator="@xml/animate_scale"
+                    android:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/sf_ui_display_regular"
+                    android:text="Chuyên mục"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/img_close_left"
+                    android:layout_width="@dimen/width_imageview_back_navigation_left"
+                    android:layout_height="@dimen/height_imageview_back_navigation_left"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/margin_imageview_back_navigation_left"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:rotation="180"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_close_black_24dp"
+                    android:stateListAnimator="@xml/animate_scale"
+                    android:tint="@color/white" />
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_5dp_navigation_left"
+        android:layout_marginTop="@dimen/margin_5dp_navigation_left"
+        android:layout_marginRight="@dimen/margin_5dp_navigation_left"
+        android:layout_marginBottom="2dp"
+        card_view:elevation="@dimen/elevation_card_view_navigation_left">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/margin_navigation_left"
+                    android:fontFamily="@font/sf_ui_display_regular"
+                    android:text="Chọn chế độ đọc"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/img_mode_read_left"
+                    android:layout_width="@dimen/width_imageview_back_navigation_left"
+                    android:layout_height="@dimen/height_imageview_back_navigation_left"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/margin_imageview_back_navigation_left"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_visibility_black_24dp"
+                    android:stateListAnimator="@xml/animate_scale"
+                    android:tint="@color/colorPrimary" />
+
+            </RelativeLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_navigation_left"
+                android:layout_marginRight="@dimen/margin_navigation_left"
+                android:layout_marginBottom="@dimen/margin_navigation_left"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_list_big"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_marginRight="@dimen/margin_imageview_back_navigation_left"
+                        android:background="@drawable/shape_button_categories"
+                        android:fontFamily="@font/sf_ui_display_regular"
+                        android:stateListAnimator="@xml/animate_scale_small"
+                        android:text="Danh sách lớn"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/btn_list_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_marginLeft="@dimen/margin_imageview_back_navigation_left"
+                        android:background="@drawable/shape_button_unselect"
+                        android:fontFamily="@font/sf_ui_display_regular"
+                        android:stateListAnimator="@xml/animate_scale_small"
+                        android:text="Danh sách nhỏ"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_5dp_navigation_left"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="@dimen/margin_5dp_navigation_left"
+        android:layout_marginBottom="@dimen/margin_5dp_navigation_left"
+        card_view:elevation="@dimen/elevation_card_view_navigation_left">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_content_news_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/margin_navigation_left"
+                    android:fontFamily="@font/sf_ui_display_regular"
+                    android:text="@string/change"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/img_change_categories"
+                    android:layout_width="@dimen/width_imageview_back_navigation_left"
+                    android:layout_height="@dimen/height_imageview_back_navigation_left"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/margin_imageview_back_navigation_left"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_format_list_bulleted_black_24dp"
+                    android:stateListAnimator="@xml/animate_scale"
+                    android:tint="@color/colorPrimary" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_grid_navigation_left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

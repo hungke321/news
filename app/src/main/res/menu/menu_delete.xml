@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item_content"
+        android:title="Xóa tất cả video"
+        app:itemTextAppearance="@style/font_text_menu"></item>
+
+</menu>

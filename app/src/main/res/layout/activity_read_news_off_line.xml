@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_back_right_read_news_offline"
+            android:layout_width="@dimen/width_imageview_back_navigation_left"
+            android:layout_height="@dimen/height_imageview_back_navigation_left"
+            android:layout_gravity="center_vertical"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:scaleType="center"
+            android:src="@drawable/ic_keyboard_backspace_black_24dp"
+            android:stateListAnimator="@xml/animate_scale"
+            android:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_content_read_news_offline"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center"
+            android:fontFamily="@font/sf_ui_display_regular"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Tin tức OffLine"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/wv_read_offline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+</LinearLayout>
