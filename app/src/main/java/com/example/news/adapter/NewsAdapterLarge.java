@@ -1,5 +1,6 @@
 package com.example.news.adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -42,7 +43,7 @@ public class NewsAdapterLarge extends RecyclerView.Adapter<NewsAdapterLarge.News
     }
 
     @Override
-    public void onBindViewHolder(@NonNull NewsViewHoldrLarge newsViewHoldrLarge, final int i) {
+    public void onBindViewHolder(@NonNull NewsViewHoldrLarge newsViewHoldrLarge, @SuppressLint("RecyclerView") final int i) {
 
         News news = mList.get(i);
 

@@ -1,7 +1,6 @@
 package com.example.news.view.fragment;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
@@ -26,7 +25,6 @@ import com.example.news.R;
 import com.example.news.condition.Contain;
 import com.example.news.database.DataBase;
 import com.example.news.preferences.ManagerPreferences;
-import com.example.news.view.dialog.DialogShareData;
 
 public class Fragment_Personal extends Fragment implements View.OnClickListener,
         SeekBar.OnSeekBarChangeListener, CompoundButton.OnCheckedChangeListener {
@@ -138,7 +136,7 @@ public class Fragment_Personal extends Fragment implements View.OnClickListener,
 
         mLayoutContainSystems = view.findViewById(R.id.layout_contain_systems);
 
-        mLayoutContainApp = view.findViewById(R.id.layout_contain_app);
+        //mLayoutContainApp = view.findViewById(R.id.layout_register);//
 
         mImgNews = view.findViewById(R.id.img_title_news);
 
